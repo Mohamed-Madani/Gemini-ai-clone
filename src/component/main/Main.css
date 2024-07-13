@@ -1,0 +1,25 @@
+.cards{
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.result{
+    overflow-y: scroll;
+}
+
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.loader-hr{
+    animation: loader 1s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        background-position: -800px 0px;
+    }
+    100% {
+        background-position: 800px 0px;
+    }
+}
